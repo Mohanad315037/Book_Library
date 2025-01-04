@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Book_Store</title>
+
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myfunctions.js"></script>
+
+<style type="text/css">
+body {
+    background-color: #342737;
+}
+</style>
+<link href="js/myfunctions.js.css" rel="stylesheet" type="text/css">
+<link href="book.html.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+<table width="800" border="1" align="center">
+  <tbody>
+    <tr>
+      <td colspan="5"><img src="images/booksrote13.png" width="1000" height="225" alt=""/></td>
+    </tr>
+    <tr>
+      <td width="201" align="center" bgcolor="#EDDAF6"><h3><a href="link.html"><strong>مواقع ذات صلة</strong></a></h3></td>
+      <td width="196" align="center" bgcolor="#EDDAF6"><h3><a href="contact.html"><strong>اتصل بنا</strong></a></h3></td>
+      <td width="176" align="center" bgcolor="#EDDAF6"><h3><strong><a href="book.html">الكتب</a></strong></h3></td>
+      <td width="169" align="center" bgcolor="#EDDAF6"><h3><a href="about.html"><strong>من نحن</strong></a></h3></td>
+      <td width="234" align="center" bgcolor="#EDDAF6"><h3><a href="index.html"><strong>الصفحة الرئيسية</strong></a></h3></td>
+    </tr>
+    <tr>
+      <td colspan="5" align="center" valign="top" bgcolor="#FFFCFC"><h2>
+        <main><section>
+      <h2>قائمة الكتب</h2>
+      </section>
+        </main>
+      </h2>
+        <table width="694" border="1">
+          <tbody>
+            <tr>
+              <td width="76" align="center"><strong>اختيار</strong></td>
+              <td width="182" align="center"><strong>إظهار التفاصيل</strong></td>
+              <td width="100" align="center"><strong>السعر</strong></td>
+              <td width="134" align="center"><strong>العنوان</strong></td>
+              <td width="88" align="center"><strong>الغلاف</strong></td>
+              <td width="88" align="center"><strong>رمز الكتاب</strong></td>
+            </tr>
+            <tr>
+              <td align="center"><input name="checkbox" type="checkbox" id="checkbox">
+              <td align="center">
+              <p>
+                <button class="show-details">إظهار التفاصيل</button>
+              </p></td>
+              <td align="center">70,000 SYP</td>
+              <td align="center">هديل اليمام للأطفال</td>
+              <td align="center"><img src="images/1.jpg" width="70" height="70" alt="غلاف الكتاب"/></td>
+              <td align="center">002001</td>
+            <tr>
+              <td align="center"><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+              <td align="center"><button class="show-details">إظهار التفاصيل</button></td>
+              <td align="center">70,000 SYP</td>
+              <td align="center">العصافير للأطفال</td>
+              <td align="center"><img src="images/2.jpg" width="70" height="70" alt="غلاف الكتاب"/></td>
+              <td align="center">002002</td>
+            </tr>
+            <tr>
+              <td align="center"><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+              <td align="center"><button class="show-details">إظهار التفاصيل</button></td>
+              <td align="center">150,000 SYP</td>
+              <td align="center">بدر الزمان</td>
+              <td align="center"><img src="images/3.jpg" width="70" height="70" alt=""/></td>
+              <td align="center">002003</td>
+            </tr>
+            <tr>
+              <td align="center"><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+              <td align="center"><button class="show-details">إظهار التفاصيل</button></td>
+              <td align="center">150,000 SYP</td>
+              <td align="center">حياة جديدة</td>
+              <td align="center"><img src="images/4.jpg" width="70" height="70" alt=""/></td>
+              <td align="center">002004</td>
+            </tr>
+            <tr>
+              <td align="center"><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+              <td align="center"><button class="show-details">إظهار التفاصيل</button></td>
+              <td align="center">200,000 SYP</td>
+              <td align="center">اعترافات ناس طيبين</td>
+              <td align="center"><img src="images/5.jpg" width="70" height="70" alt=""/></td>
+              <td align="center">002005</td>
+            </tr>
+        </table>
+        <h2>
+          <main>
+            <section>
+              <p>
+	 <section></section>
+
+    <section id="book-details" style="display: none;" >
+      <h2>تفاصيل الكتاب</h2>
+     <table width="694" border="1">
+            <tr>
+          <td align="center" id="book-isbn"></td>
+          <td align="center"> رمز الكتاب</td>
+        </tr>
+		  <tr>
+   <td id="book-cover" ><img id="displayImage" src="" alt="غلاف الكتاب" style="max-width: 250px; margin: 0 auto;display: block;"/></td>          <td align="center"> الغلاف</td>
+        </tr>
+        <tr>
+          <td align="center" id="book-title"></td>
+          <td align="center">العنوان</td>
+        </tr>
+        <tr>
+          <td align="center" id="book-price"></td>
+          <td align="center">السعر</td>
+        </tr>
+        <tr>
+          <td align="center" id="book-publisher"></td>
+          <td align="center">الناشر</td>
+        </tr>
+        <tr>
+          <td align="center" id="book-classification"></td>
+          <td align="center">تصنيف الكتاب</td>
+        </tr>
+        <tr>
+          <td align="center" id="book-summary"></td>
+          <td align="center">ملخص</td>
+        </tr>
+      </table>
+    </section>
+        <p>			<button  class="select-book">متابعة </button>
+        </p>
+
+    <section id="order-form" style="display: none;">
+      <h2>طلب الكتاب</h2>
+      <form id="order-form">
+       <input type="text" id="full-name" name="full-name" pattern="[a-zA-Z\s]+" required>
+		  <label for="full-name">: الاسم الكامل</label>
+        
+<br>
+        <input type="text" id="national-id" name="national-id" pattern="\d{11}" required>
+		  <label for="national-id">: الرقم الوطني</label>
+<br>
+                <input type="date" id="birth-date" name="birth-date">
+		  <label for="birth-date"> :تاريخ الولادة</label>
+<br>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,13}" required>
+		  <label for="mobile">: رقم الموبايل</label>
+<br>
+                <input type="email" id="email" name="email">
+		  <label for="email">: البريد الإلكتروني</label>
+<br>
+        <button type="submit">إرسال</button>
+		  <br>
+      </form>
+    </section>
+				
+
+  <main>
+    <section><a href="book.html"><br>
+      عودة</a></section>
+</body>
+
+</html>
